@@ -17,6 +17,8 @@ import ProvideLiquidity from 'assets/images/featured/ProvideLiquidity.svg';
 import Rewards from 'assets/images/featured/Rewards.svg';
 import FeaturedSwap from 'assets/images/featured/Swap.svg';
 import { ReactComponent as CoingeckoIcon } from 'assets/images/social/Coingecko.svg';
+import { ReactComponent as InstagramIcon } from 'assets/images/social/Instagram.svg';
+import { ReactComponent as FacebookIcon } from 'assets/images/social/Facebook.svg';
 import { ReactComponent as DiscordIcon } from 'assets/images/social/Discord.svg';
 import { ReactComponent as MediumIcon } from 'assets/images/social/Medium.svg';
 import { ReactComponent as RedditIcon } from 'assets/images/social/Reddit.svg';
@@ -297,39 +299,40 @@ const LandingPage: React.FC = () => {
 
   const socialicons = [
     {
-      link: 'https://www.reddit.com/r/QuickSwap/',
+      link: 'https://www.reddit.com/r/intergalacticracing/',
       icon: <RedditIcon />,
       title: 'Reddit',
     },
     {
-      link: 'https://discord.com/invite/XJTM7FV88Y',
-      icon: <DiscordIcon />,
-      title: 'Discord',
+      link: 'https://www.instagram.com/intergalactic.racing/',
+      icon: <InstagramIcon />,
+      title: 'Instagram',
     },
     {
-      link: 'https://twitter.com/QuickswapDEX',
-      icon: <TwitterIcon />,
-      title: 'Twitter',
-    },
+      link: 'https://www.facebook.com/intergalactic.racing',
+      icon: <FacebookIcon />,
+      title: 'Facebook',
+    },    
     {
-      link: 'https://quickswap-layer2.medium.com/',
-      icon: <MediumIcon />,
-      title: 'Medium',
-    },
-    {
-      link: 'https://www.youtube.com/channel/UCrPlF-DBwD-UzLFDzJ4Z5Fw',
+      link: 'https://www.youtube.com/channel/UCzvgg-g7ZIdX7NILVHOSR6g',
       icon: <YouTubeIcon />,
       title: 'Youtube',
     },
     {
-      link: 'https://t.me/QuickSwapDEX',
-      icon: <TelegramIcon />,
-      title: 'Telegram',
+      link: 'https://discord.com/channels/941331840088834108/941331840587948072',
+      icon: <DiscordIcon />,
+      title: 'Discord',
+    },
+
+    {
+      link: 'https://medium.com/@igc/list/intergalactic-racing-19e94cbfc30b',
+      icon: <MediumIcon />,
+      title: 'Medium',
     },
     {
-      link: 'https://www.coingecko.com/en/exchanges/quickswap',
-      icon: <CoingeckoIcon />,
-      title: 'CoinGecko',
+      link: 'http://t.me/intergalactic_racing',
+      icon: <TelegramIcon />,
+      title: 'Telegram',
     },
   ];
 
