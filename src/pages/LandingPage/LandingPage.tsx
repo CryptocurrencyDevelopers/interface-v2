@@ -330,7 +330,7 @@ const LandingPage: React.FC = () => {
       title: 'Medium',
     },
     {
-      link: 'http://t.me/intergalactic_racing',
+      link: 'https://t.me/intergalactic_racing',
       icon: <TelegramIcon />,
       title: 'Telegram',
     },
