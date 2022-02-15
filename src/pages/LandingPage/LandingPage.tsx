@@ -309,28 +309,22 @@ const LandingPage: React.FC = () => {
       title: 'Instagram',
     },
     {
-      link: 'https://www.facebook.com/intergalactic.racing',
+      link: 'https://www.facebook.com/intergalactic.racing/',
       icon: <FacebookIcon />,
       title: 'Facebook',
-    },    
+    },
     {
-      link: 'https://www.youtube.com/channel/UCzvgg-g7ZIdX7NILVHOSR6g',
+      link: 'https://www.youtube.com/channel/UCzvgg-g7ZIdX7NILVHOSR6g/',
       icon: <YouTubeIcon />,
       title: 'Youtube',
     },
     {
-      link: 'https://discord.com/channels/941331840088834108/941331840587948072',
-      icon: <DiscordIcon />,
-      title: 'Discord',
-    },
-
-    {
-      link: 'https://medium.com/@igc/list/intergalactic-racing-19e94cbfc30b',
+      link: 'https://medium.com/@igc/list/intergalactic-racing-19e94cbfc30b/',
       icon: <MediumIcon />,
       title: 'Medium',
     },
     {
-      link: 'https://t.me/intergalactic_racing',
+      link: 'https://t.me/intergalactic_racing/',
       icon: <TelegramIcon />,
       title: 'Telegram',
     },

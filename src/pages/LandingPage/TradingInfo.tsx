@@ -50,13 +50,13 @@ export const TradingInfo: React.FC<{ globalData: any }> = ({ globalData }) => {
 
   return (
     <>
-      {openStakeModal && (
+      {/* {openStakeModal && (
         <StakeQuickModal
           open={openStakeModal}
           onClose={() => setOpenStakeModal(false)}
         />
-      )}
-      <Box className={classes.tradingSection}>
+      )} */}
+      {/* <Box className={classes.tradingSection}>
         {globalData ? (
           <Typography variant='h3'>
             {Number(globalData.oneDayTxns).toLocaleString()}
@@ -114,7 +114,7 @@ export const TradingInfo: React.FC<{ globalData: any }> = ({ globalData }) => {
         <Typography variant='h4' onClick={() => setOpenStakeModal(true)}>
           stake {'>'}
         </Typography>
-      </Box>
+      </Box> */}
     </>
   );
 };
