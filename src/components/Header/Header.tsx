@@ -261,11 +261,6 @@ const Header: React.FC = () => {
       text: 'Swap',
       id: 'swap-page-link',
     },
-    {
-      link: '/analytics',
-      text: 'Analytics',
-      id: 'analytics-page-link',
-    },
   ];
 
   const outLinks: any[] = [
