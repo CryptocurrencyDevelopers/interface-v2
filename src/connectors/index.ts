@@ -4,7 +4,6 @@ import { WalletConnectConnector } from '@web3-react/walletconnect-connector';
 import { LedgerConnector } from '@web3-react/ledger-connector';
 import { WalletLinkConnector } from './WalletLink';
 import { PortisConnector } from './Portis';
-
 import { FortmaticConnector } from './Fortmatic';
 import { ArkaneConnector } from './Arkane';
 import { NetworkConnector } from './NetworkConnector';
@@ -19,7 +18,7 @@ const FORMATIC_KEY = process.env.REACT_APP_FORTMATIC_KEY;
 const PORTIS_ID = process.env.REACT_APP_PORTIS_ID;
 
 export const NETWORK_CHAIN_ID: number = parseInt(
-  process.env.REACT_APP_CHAIN_ID ?? '1',
+  process.env.REACT_APP_CHAIN_ID ?? '137',
 );
 
 if (typeof NETWORK_URL === 'undefined') {

@@ -81,6 +81,10 @@ const TOKEN_OVERRIDES: {
     name: 'Energi',
     symbol: 'NRGE',
   },
+  '0x35b923b99f3439e991de9d147b1217Ec5EEe4302': {
+    name: 'Intergalactic Coin',
+    symbol: 'IGC',
+  },
 };
 
 export async function getBlockFromTimestamp(timestamp: number): Promise<any> {

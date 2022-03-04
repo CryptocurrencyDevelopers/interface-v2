@@ -69,34 +69,10 @@ const SwapPage: React.FC = () => {
         </Box>
       </Box>
       <Grid container spacing={4}>
-        <Grid item xs={12} sm={12} md={5}>
+        <Grid item xs={12} sm={12} md={12}>
           <Box className={classes.wrapper}>
             <SwapMain />
           </Box>
-        </Grid>
-        <Grid item xs={12} sm={12} md={7}>
-          <Box
-            display='flex'
-            flexWrap='wrap'
-            justifyContent='space-between'
-            width='100%'
-          >
-            {token1 && (
-              <Box className={classes.swapTokenDetails}>
-                <SwapTokenDetails token={token1} />
-              </Box>
-            )}
-            {token2 && (
-              <Box className={classes.swapTokenDetails}>
-                <SwapTokenDetails token={token2} />
-              </Box>
-            )}
-          </Box>
-          {token1 && token2 && (
-            <Box className={classes.wrapper} marginTop='32px'>
-              <LiquidityPools token1={token1} token2={token2} />
-            </Box>
-          )}
         </Grid>
       </Grid>
     </Box>

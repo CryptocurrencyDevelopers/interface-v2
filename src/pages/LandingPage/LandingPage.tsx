@@ -50,6 +50,7 @@ import {
 } from 'utils';
 import { useGlobalData, useWalletModalToggle } from 'state/application/hooks';
 import { useLairInfo, useTotalRewardsDistributed } from 'state/stake/hooks';
+import SwapPage from '../SwapPage/SwapPage';
 
 const useStyles = makeStyles(({ palette, breakpoints }) => ({
   heroSection: {
@@ -392,6 +393,14 @@ const useStyles = makeStyles(({ palette, breakpoints }) => ({
       },
     },
   },
+  wrapper: {
+    padding: 24,
+    backgroundColor: palette.background.paper,
+    borderRadius: 20,
+    [breakpoints.down('xs')]: {
+      padding: '16px 12px',
+    },
+  },
   smallCommunityContainer: {
     display: 'flex',
     alignItems: 'center',
@@ -453,11 +462,6 @@ const LandingPage: React.FC = () => {
       title: 'Buy Crypto with Fiat',
       desc:
         'Simple way to buy with Apple Pay, credit card, bank transfer & more.',
-    },
-    {
-      img: Analytics,
-      title: 'Analytics',
-      desc: 'Scan through Quickwap analytics & Historical Data.',
     },
   ];
 
@@ -583,7 +587,13 @@ const LandingPage: React.FC = () => {
         ))}
       </Box>
       <Box mt={2} width={1}>
-        <TopMovers background={palette.background.paper} />
+        <Grid container spacing={4}>
+          <Grid item xs={12} sm={12} md={12}>
+            <Box className={classes.wrapper}>
+              <SwapPage />
+            </Box>
+          </Grid>
+        </Grid>
       </Box>
       <br />
       <br />
@@ -666,7 +676,7 @@ const LandingPage: React.FC = () => {
                 currency={fiatCurrency}
                 title='I want to Buy:'
                 showMaxButton={false}
-                otherCurrency={undefined}
+                otherCurrency={returnTokenFromKey('MATIC')}
                 handleCurrencySelect={setFiatCurrency}
                 amount={fiatAmount}
                 setAmount={setFiatAmount}

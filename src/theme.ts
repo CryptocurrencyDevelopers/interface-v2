@@ -12,10 +12,8 @@ const secondary = '#344252';
 const secondaryLight = '#252833';
 const secondaryDark = '#282d3d';
 const secondaryContrast = '#121319';
-
 const black = '#000000';
 const white = '#ffffff';
-
 const textPrimary = '#c7cad9';
 const textSecondary = '#696c80';
 const textDisabled = '#626680';
@@ -25,15 +23,12 @@ const bgPalette = '#1b1e29';
 const greyLight = 'rgba(99, 103, 128, 0.1)';
 const greyBgLight = '#3e4252';
 const greyBg = '#1b1d26';
-
 const successMain = '#0fc679';
 const successDark = '#1DB2D5';
 const successLight = 'rgba(15, 198, 121, 0.1)';
-
 const errorMain = '#ff5252';
 const errorDark = '#f00';
 const errorLight = 'rgba(255, 82, 82, 0.1)';
-
 const divider = 'rgba(130, 177, 255, 0.08)';
 
 // breakpoints

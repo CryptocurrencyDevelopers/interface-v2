@@ -44,6 +44,7 @@ export const GlobalConst = {
     ZERO_ADDRESS: '0x0000000000000000000000000000000000000000',
     LAIR_ADDRESS: '0xf28164a485b0b2c90639e47b0f377b4a438a16b1',
     QUICK_ADDRESS: '0x831753DD7087CaC61aB5644b308642cc1c33Dc13',
+    IGC_ADDRESS: '0x35b923b99f3439e991de9d147b1217Ec5EEe4302',
     FACTORY_ADDRESS: '0x5757371414417b8C6CAad45bAeF941aBc7d3Ab32',
     GOVERNANCE_ADDRESS: '0x5e4be8Bc9637f0EAA1A755019e06A68ce081D58F', //TODO: MATIC
     MERKLE_DISTRIBUTOR_ADDRESS: {
@@ -70,8 +71,7 @@ export const GlobalConst = {
       JSBI.BigInt(10000),
     ),
     // the Uniswap Default token list lives here
-    DEFAULT_TOKEN_LIST_URL:
-      'https://unpkg.com/quickswap-default-token-list@1.2.21/build/quickswap-default.tokenlist.json',
+    DEFAULT_TOKEN_LIST_URL: '//localhost:3000/token2.json',
   },
   analyticChart: {
     ONE_MONTH_CHART: 1,
@@ -171,9 +171,6 @@ export const GlobalData = {
         returnTokenFromKey('ETHER'),
         returnTokenFromKey('WBTC'),
         returnTokenFromKey('DAI'),
-        returnTokenFromKey('MAUSDC'),
-        returnTokenFromKey('MI'),
-        returnTokenFromKey('EROWAN'),
       ],
     },
     // Some tokens can only be swapped via certain pairs, so we override the list of bases that are considered for these tokens.
@@ -183,6 +180,7 @@ export const GlobalData = {
       ...WETH_ONLY,
       [ChainId.MATIC]: [
         ...WETH_ONLY[ChainId.MATIC],
+        returnTokenFromKey('IGC'),
         returnTokenFromKey('DAI'),
         returnTokenFromKey('USDC'),
         returnTokenFromKey('USDT'),
@@ -196,6 +194,7 @@ export const GlobalData = {
       ...WETH_ONLY,
       [ChainId.MATIC]: [
         ...WETH_ONLY[ChainId.MATIC],
+        returnTokenFromKey('IGC'),
         returnTokenFromKey('DAI'),
         returnTokenFromKey('USDC'),
         returnTokenFromKey('USDT'),
@@ -208,6 +207,7 @@ export const GlobalData = {
   pairs: {
     PINNED_PAIRS: {
       [ChainId.MATIC]: [
+        [returnTokenFromKey('ETHER'), returnTokenFromKey('IGC')],
         [returnTokenFromKey('USDC'), returnTokenFromKey('USDT')],
         [returnTokenFromKey('USDC'), returnTokenFromKey('DAI')],
         [returnTokenFromKey('ETHER'), returnTokenFromKey('USDC')],
@@ -273,6 +273,7 @@ export const GlobalValue = {
         'Quickswap',
       ),
     },
+    IGC: returnTokenFromKey('IGC'),
   },
 };
 
