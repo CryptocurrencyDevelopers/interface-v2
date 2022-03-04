@@ -71,7 +71,7 @@ export const GlobalConst = {
       JSBI.BigInt(10000),
     ),
     // the Uniswap Default token list lives here
-    DEFAULT_TOKEN_LIST_URL: '//localhost:3000/token2.json',
+    DEFAULT_TOKEN_LIST_URL: 'https://intergalactic.racing/token2.json',
   },
   analyticChart: {
     ONE_MONTH_CHART: 1,
